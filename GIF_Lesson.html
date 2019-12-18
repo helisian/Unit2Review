@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang=“en” dir=“ltr”>
   <head>
-    <title>GIPHY</title>
+    <title>GIPHYLAND</title>
     <link rel="stylesheet" href="./GIF_Lesson.css"/>
     <meta charset=“utf-8”/>
     <meta name=“viewport” content=“width-device-width" initial-scale=1/>
+    <meta http-equiv="X-UA-Cmpatible" content="ie=edge">
     <script src="./GIF_Lesson.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
     
   <body>
-    <form action="">
-        <input id="task" type="task" name="task" placeholder="Enter that thing that bugs you">
-        <select disabled></select>
-        <input class="submit" type="submit">
+    <form class="form" action="">
+        <input id="userInput" type="text" name="userInput" placeholder="Enter Something">
+        <select class="select">
+          <option id="select" value="0" selected disabled>Choose Limit</option>
+        </select>
+        <input id="submit" type="submit" value="Search">
     </form>
-     
+    <div class="content"></div>
   </body>
-</html>
+
+  </html>
